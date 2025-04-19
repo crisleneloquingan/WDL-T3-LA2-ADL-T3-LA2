@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h2>GSM BLUE </h2>
+            <img src="gsm.jpg" height="300"  width="300"/>
+            <h3>Price: 140.00</h3>
+            <button class = "buttonAdd" onClick="addToCart('GSM BLUE ',  140.00)">Add to Cart</button>
+            <button class = "buttonRem" onClick="removeFromCart('GSM BLUE ',  140.00)">Remove from Cart</button>
+        </div>
+        <div class="product">
+            <h2>Emperador</h2>
+            <img src="emperador.jpg" height="300"  width="300"/>
+            <h3>Price: 120.00</h3>
+            <button class = "buttonAdd" onClick="addToCart('Emperador ',  120.00)">Add to Cart</button>
+            <button class = "buttonRem" onClick="removeFromCart('Emperador',  120.00)">Remove from Cart</button>
+        </div>
+        <div class="cart">
+            <h2>Customer's Cart</h2>
+            <ul id="products"></ul>
+            <ul id="subtotal"></ul>
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
